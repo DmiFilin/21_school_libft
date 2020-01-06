@@ -1,0 +1,33 @@
+# libft
+School 21 (Ecole 42) project. The aim of this project is to code a C library regrouping usual functions.
+
+### Libc functions
+
+* [ft_memset](/srcs/memory/ft_memset.c)
+* [ft_bzero](/srcs/memory/ft_bzero.c)
+* [ft_memcpy](/srcs/memory/ft_memcpy.c)
+* [ft_memccpy](/srcs/memory/ft_memccpy.c)
+* [ft_memmove](/srcs/memory/ft_memmove.c)
+* [ft_memchr](/srcs/memory/ft_memchr.c)
+* [ft_memcmp](/srcs/memory/ft_memcmp.c)
+* [ft_strlen](/srcs/string/ft_strlen.c)
+* [ft_strdup](/srcs/string/ft_strdup.c)
+* [ft_strcpy](/srcs/string/ft_strcpy.c)
+* [ft_strncpy](/srcs/string/ft_strncpy.c)
+* [ft_strcat](/srcs/string/ft_strcat.c)
+* [ft_strncat](/srcs/string/ft_strncat.c)
+* [ft_strlcat](/srcs/string/ft_strlcat.c)
+* [ft_strchr](/srcs/string/ft_strchr.c)
+* [ft_strrchr](/srcs/string/ft_strrchr.c)
+* [ft_strstr](/srcs/string/ft_strstr.c)
+* [ft_strnstr](/srcs/string/ft_strnstr.c)
+* [ft_strcmp](/srcs/string/ft_strcmp.c)
+* [ft_strncmp](/srcs/string/ft_strncmp.c)
+* [ft_atoi](/srcs/conv/ft_atoi.c)
+* [ft_isalpha](/srcs/char/ft_isalpha.c)
+* [ft_isdigit](/srcs/char/ft_isdigit.c)
+* [ft_isalnum](/srcs/char/ft_isalnum.c)
+* [ft_isascii](/srcs/char/ft_isascii.c)
+* [ft_isprint](/srcs/char/ft_isprint.c)
+* [ft_toupper](/srcs/char/ft_toupper.c)
+* [ft_tolower](/srcs/char/ft_tolower.c)
