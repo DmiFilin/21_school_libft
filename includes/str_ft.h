@@ -17,6 +17,7 @@
 # include <unistd.h>
 
 size_t			ft_strlen(const char *s);
+char			*ft_str_upper(char *row_str);
 char			*ft_strdup(const char *s1);
 char			*ft_strcpy(char *dest, const char *src);
 char			*ft_strncpy(char *dest, const char *src, size_t len);
