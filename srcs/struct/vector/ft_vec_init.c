@@ -20,7 +20,7 @@ t_vec	*ft_vec_init(size_t capacity)
 		return (NULL);
 	if (!(vec->data = ft_memalloc(capacity)))
 	{
-		ft_mem_free(vec);
+		free(vec);
 		return (NULL);
 	}
 	vec->capacity = capacity;

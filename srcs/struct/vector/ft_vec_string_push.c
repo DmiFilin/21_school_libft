@@ -19,7 +19,7 @@ t_vec	*ft_vec_string_push(t_vec **vec, register char *str)
 	while (*str)
 	{
 		if (!ft_vec_push(vec, *str++))
-			ft_mem_free_all(MALLOC_ERR);
+			return (NULL);
 	}
 	return (*vec);
 }

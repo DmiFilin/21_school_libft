@@ -41,8 +41,6 @@ typedef unsigned int	t_uint;
 ** Colors
 */
 
-
-
 /*
 ** Development utils
 ** for debugging or writing code

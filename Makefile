@@ -88,7 +88,8 @@ STR_FILES = ./srcs/string/ft_strcat.c \
 			./srcs/string/ft_splitwsp.c \
 			./srcs/string/ft_strnjoin.c \
 			./srcs/string/ft_free_strarr.c \
-			./srcs/string/ft_putnstr.c
+			./srcs/string/ft_putnstr.c \
+			./srcs/string/ft_str_upper.c
 
 LIST_FILES = ./srcs/struct/list/ft_lstadd.c \
 			 ./srcs/struct/list/ft_lstdel.c \

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char 	*ft_str_upper(char *row_str)
+char	*ft_str_upper(char *row_str)
 {
 	while (*row_str)
 	{
