@@ -40,10 +40,10 @@ int			ft_ht_delete(t_hashtable *ht, const char *key)
 	item = ht->hashtable[index];
 	while (item != NULL)
 	{
-		if (item != DEL_ITEM && ft_strcmp(item->key, key) == 0)
+		if (item != ht->del_item && ft_strcmp(item->key, key) == 0)
 		{
 			ft_del_item(item);
-			ht->hashtable[index] = DEL_ITEM;
+			ht->hashtable[index] = ht->del_item;
 			ht->count--;
 			return (1);
 		}

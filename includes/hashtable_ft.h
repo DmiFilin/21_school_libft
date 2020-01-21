@@ -32,8 +32,6 @@ typedef struct	s_hashtable
 	t_item	**hashtable;
 }				t_hashtable;
 
-# define DEL_ITEM ht->del_item
-
 t_hashtable		*ft_ht_create(size_t size);
 void			ft_ht_all_delete(t_hashtable *ht);
 void			ft_del_item(t_item *item);

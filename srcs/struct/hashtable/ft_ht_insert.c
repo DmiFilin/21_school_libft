@@ -41,7 +41,7 @@ int			ft_ht_insert(t_hashtable *ht, const char *key, const char *value)
 	attempt = 1;
 	while (cur_item != NULL)
 	{
-		if (cur_item != DEL_ITEM && ft_strcmp(cur_item->key, key) == 0)
+		if (cur_item != ht->del_item && ft_strcmp(cur_item->key, key) == 0)
 		{
 			ft_del_item(cur_item);
 			ht->hashtable[index] = item;

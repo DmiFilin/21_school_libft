@@ -28,7 +28,7 @@ char	*ft_ht_search(t_hashtable *ht, const char *key)
 	item = ht->hashtable[index];
 	while (item != NULL)
 	{
-		if (item != DEL_ITEM && ft_strcmp(item->key, key) == 0)
+		if (item != ht->del_item && ft_strcmp(item->key, key) == 0)
 			return (item->value);
 		index = ft_ht_get_hash(key, (int)ht->size, attempt++);
 		item = ht->hashtable[index];

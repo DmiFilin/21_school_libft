@@ -21,9 +21,6 @@ typedef struct	s_vec
 	size_t	offset;
 }				t_vec;
 
-# define VECDATA (*vec)->data
-# define VECCAP (*vec)->capacity
-
 t_vec			*ft_vec_init(size_t capacity);
 t_vec			*ft_vec_push(t_vec **vec, char c);
 t_vec			*ft_ptr_vec_init(size_t capacity);

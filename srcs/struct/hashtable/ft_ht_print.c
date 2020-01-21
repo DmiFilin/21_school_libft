@@ -22,7 +22,7 @@ void	ft_ht_print(t_hashtable *ht)
 	while (++i < size)
 	{
 		item = ht->hashtable[i];
-		if (item != NULL && item != DEL_ITEM)
+		if (item != NULL && item != ht->del_item)
 		{
 			ft_putnstr(4, item->key, "=", item->value, "\n");
 		}
