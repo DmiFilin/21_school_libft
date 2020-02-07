@@ -6,7 +6,7 @@
 #    By: rgalyeon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/29 12:08:49 by rgalyeon          #+#    #+#              #
-#    Updated: 2019/04/01 21:30:24 by rgalyeon         ###   ########.fr        #
+#    Updated: 2020/01/30 16:00:35 by rgalyeon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,7 +89,13 @@ STR_FILES = ./srcs/string/ft_strcat.c \
 			./srcs/string/ft_strnjoin.c \
 			./srcs/string/ft_free_strarr.c \
 			./srcs/string/ft_putnstr.c \
-			./srcs/string/ft_str_upper.c
+			./srcs/string/ft_str_upper.c \
+ 			./srcs/string/get_next_line.c \
+ 			./srcs/string/ft_vstrpb.c \
+ 			./srcs/string/ft_vstrdel.c \
+ 			./srcs/string/ft_vstrpopfront.c \
+ 			./srcs/string/ft_vstrfind.c \
+ 			./srcs/string/ft_makestr.c
 
 LIST_FILES = ./srcs/struct/list/ft_lstadd.c \
 			 ./srcs/struct/list/ft_lstdel.c \

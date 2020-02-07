@@ -24,13 +24,13 @@ t_vec	*ft_ptr_vec_push(t_vec **vec, void *c)
 		if (!((*vec)->data =
 						ft_memalloc(sizeof(void *) * ((*vec)->capacity * 2))))
 		{
-			ft_mem_free(tmp);
-			ft_mem_free(*vec);
+			free(tmp);
+			free(*vec);
 			return (NULL);
 		}
 		(*vec)->capacity *= 2;
 		ft_memcpy((*vec)->data, tmp, sizeof(void *) * (*vec)->total);
-		ft_mem_free(tmp);
+		free(tmp);
 		(((void **)(*vec)->data))[(*vec)->total++] = c;
 	}
 	else
