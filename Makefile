@@ -6,7 +6,7 @@
 #    By: rgalyeon <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/29 12:08:49 by rgalyeon          #+#    #+#              #
-#    Updated: 2020/01/30 16:00:35 by rgalyeon         ###   ########.fr        #
+#    Updated: 2020/02/10 14:56:59 by rgalyeon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -161,24 +161,28 @@ FILES = $(CHAR_FILES) $(CONV_FILES) $(MATH_FILES) $(MEM_FILES) $(PUT_FILES) \
 		$(STR_FILES) $(LIST_FILES) $(MATRIX_FILES) $(RB_TREES_FILES) \
 		$(VEC_FILES) $(SORT_FILES) $(HASHTABLE_FILES)
 OBJECTS = $(FILES:.c=.o)
+DEPS = $(FILES:.c=.d)
 
 all: $(NAME)
 
-$(NAME): $(FILES:.c=.o)
+$(NAME): $(OBJECTS)
 	@ar -rc $(NAME) $(OBJECTS)
 	@ranlib $(NAME)
 	@echo "\033[33mLibrary compiled!\033[0m"
 
 %.o: %.c
 	@echo "\033[34mCompilation of \033[0m\033[31m$(notdir $<)\033[34m done.\033[0m"
-	@$(CC) $(FLAG) -I $(INCLUDES) -c $< -o $@
+	@$(CC) $(FLAG) -I $(INCLUDES) -c -MD $< -o $@
 	@printf "\033[A\033[K"
+
+-include $(DEPS)
 
 norm:
 	@$(NORM) $(FILES) $(HEADER)
 
 clean:
 	@rm -rf $(OBJECTS)
+	@rm -rf $(DEPS)
 
 fclean: clean
 	@rm -rf $(NAME)
